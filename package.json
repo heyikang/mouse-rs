@@ -1,16 +1,16 @@
 {
-  "name": "@napi-rs/package-template",
+  "name": "@heyikang/mouse-rs",
   "version": "1.0.0",
-  "description": "Template project for writing node package with napi-rs",
+  "description": "Rust mouse-rs wrapper in nodejs",
   "main": "index.js",
-  "repository": "git@github.com:napi-rs/package-template.git",
+  "repository": "https://github.com/heyikang/mouse-rs",
   "license": "MIT",
   "keywords": [
     "napi-rs",
     "NAPI",
     "N-API",
     "Rust",
-    "node-addon",
+    "mouse-rs",
     "node-addon-api"
   ],
   "files": [
@@ -18,7 +18,7 @@
     "index.js"
   ],
   "napi": {
-    "name": "package-template",
+    "name": "mouse-rs",
     "triples": {
       "defaults": true,
       "additional": [
@@ -27,11 +27,8 @@
         "i686-pc-windows-msvc",
         "armv7-unknown-linux-gnueabihf",
         "aarch64-apple-darwin",
-        "aarch64-linux-android",
-        "x86_64-unknown-freebsd",
         "aarch64-unknown-linux-musl",
-        "aarch64-pc-windows-msvc",
-        "armv7-linux-androideabi"
+        "aarch64-pc-windows-msvc"
       ]
     }
   },
@@ -107,5 +104,17 @@
     "singleQuote": true,
     "arrowParens": "always"
   },
-  "packageManager": "yarn@4.1.1"
+  "packageManager": "yarn@4.1.1",
+  "optionalDependencies": {
+    "@heyikang/mouse-rs-win32-x64-msvc": "1.0.0",
+    "@heyikang/mouse-rs-darwin-x64": "1.0.0",
+    "@heyikang/mouse-rs-linux-x64-gnu": "1.0.0",
+    "@heyikang/mouse-rs-linux-x64-musl": "1.0.0",
+    "@heyikang/mouse-rs-linux-arm64-gnu": "1.0.0",
+    "@heyikang/mouse-rs-win32-ia32-msvc": "1.0.0",
+    "@heyikang/mouse-rs-linux-arm-gnueabihf": "1.0.0",
+    "@heyikang/mouse-rs-darwin-arm64": "1.0.0",
+    "@heyikang/mouse-rs-linux-arm64-musl": "1.0.0",
+    "@heyikang/mouse-rs-win32-arm64-msvc": "1.0.0"
+  }
 }

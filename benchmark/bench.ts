@@ -1,21 +1,21 @@
 import b from 'benny'
 
-import { plus100 } from '../index'
-
-function add(a: number) {
-  return a + 100
-}
+import mouse from '../index'
 
 async function run() {
   await b.suite(
-    'Add 100',
+    'move tests',
 
-    b.add('Native a + 100', () => {
-      plus100(10)
+    b.add('move to x: 100, y: 100', () => {
+      mouse.moveTo(100, 100)
     }),
 
-    b.add('JavaScript a + 100', () => {
-      add(10)
+    b.add('move to x: 200, y: 200', () => {
+      mouse.moveTo(200, 200)
+    }),
+
+    b.add('move to x: 300, y: 300', () => {
+      mouse.moveTo(300, 300)
     }),
 
     b.cycle(),
