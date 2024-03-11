@@ -1,6 +1,6 @@
 {
   "name": "@heyikang/mouse-rs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Rust mouse-rs wrapper in nodejs",
   "main": "index.js",
   "repository": "https://github.com/heyikang/mouse-rs",
@@ -11,7 +11,7 @@
     "N-API",
     "Rust",
     "mouse-rs",
-    "node-addon-api"
+    "mouse controller"
   ],
   "files": [
     "index.d.ts",
@@ -20,14 +20,11 @@
   "napi": {
     "name": "mouse-rs",
     "triples": {
-      "defaults": true,
+      "defaults": false,
       "additional": [
-        "x86_64-unknown-linux-musl",
-        "aarch64-unknown-linux-gnu",
-        "i686-pc-windows-msvc",
-        "armv7-unknown-linux-gnueabihf",
+        "x86_64-apple-darwin",
+        "x86_64-pc-windows-msvc",
         "aarch64-apple-darwin",
-        "aarch64-unknown-linux-musl",
         "aarch64-pc-windows-msvc"
       ]
     }
