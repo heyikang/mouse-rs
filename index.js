@@ -234,9 +234,9 @@ if (!nativeBinding) {
   throw new Error(`Failed to load native binding`)
 }
 
-const { NodeKeys, MouseButton, moveTo, press, release, getPosition, wheel, scroll, click } = nativeBinding
+const { Keys, MouseButton, moveTo, press, release, getPosition, wheel, scroll, click } = nativeBinding
 
-module.exports.NodeKeys = NodeKeys
+module.exports.Keys = Keys
 module.exports.MouseButton = MouseButton
 module.exports.moveTo = moveTo
 module.exports.press = press
