@@ -1,6 +1,6 @@
 {
   "name": "@heyikang/mouse-rs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Rust mouse-rs wrapper in nodejs",
   "main": "index.js",
   "repository": "https://github.com/heyikang/mouse-rs",
