@@ -39,13 +39,6 @@ fn mouse_key_map(key: Keys) -> MouseRsKeys {
 }
 
 #[napi]
-pub enum MouseButton {
-  Left,
-  Right,
-  Middle,
-}
-
-#[napi]
 pub fn move_to(x: i32, y: i32) -> bool {
   let mouse = Mouse::new();
   mouse.move_to(x, y).is_ok()
